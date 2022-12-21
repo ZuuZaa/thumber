@@ -1,0 +1,19 @@
+main {
+  height: calc(100vh - 7rem);
+}
+main .slider {
+  height: 100%;
+}
+main .slider .current-slide {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../../images/img_1.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .slider .current-slide .fa-solid {
+  font-size: 4.4rem;
+}/*# sourceMappingURL=index.css.map */

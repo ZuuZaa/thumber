@@ -1,0 +1,22 @@
+main {
+    height: calc(100vh - 7rem);
+
+    .slider {
+        height: 100%;
+
+        .current-slide {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: url("../../images/img_1.jpg.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .fa-solid {
+                font-size: 4.4rem;
+            }
+        }
+    }
+}

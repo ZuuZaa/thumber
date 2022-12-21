@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/LeagueSpartan-Light.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea
+{
+	border: none;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	font-size: inherit;
+	font-family: inherit;
+    color: inherit;
+}
+
+input:focus
+{
+	outline:none;
+}
