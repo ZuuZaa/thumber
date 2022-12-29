@@ -1,1 +1,48 @@
-main{}
+main {
+    form.user-info {
+        width: 100%;
+        fieldset {
+            border: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        label {
+            color: whitesmoke;
+            font-size: 2.1rem;
+            text-transform: capitalize;
+            margin-bottom: .8rem;
+        }
+
+        input[type="text"], input[type="email"],
+        textarea {
+            font-size: 2rem;
+            padding-block: .6rem;
+            border-bottom: .2rem solid #808080;
+            color: whitesmoke;
+            display: block;
+            width: 100%;
+            margin-bottom: 4rem;
+
+            &:focus {
+                border-bottom: .2rem solid whitesmoke;
+            }
+        }
+
+        input[type="submit"]{
+            background: #e44985;
+            color: whitesmoke;
+            font-size: 1.2rem;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            padding: 1.5rem 3rem;
+            border-radius: 4rem;
+            &:hover, &:focus {
+                background: hsl(337, 74%, 49%);
+
+            }
+        }
+
+    }
+}

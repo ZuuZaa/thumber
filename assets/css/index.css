@@ -3,17 +3,30 @@ main {
 }
 main .slider {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 main .slider .current-slide {
-  height: 100%;
+  flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url("../../images/img_1.jpg.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("images/img_1.jpg.webp");
 }
 main .slider .current-slide .fa-solid {
   font-size: 4.4rem;
+  padding: 2rem;
+}
+main .slider .slide-dots {
+  padding-block: 1rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+main .slider .slide-dots .image-dot {
+  height: 10rem;
+  width: 100%;
+}
+main .slider .slide-dots .active-dot {
+  border: 0.5rem solid #e44985;
 }/*# sourceMappingURL=index.css.map */

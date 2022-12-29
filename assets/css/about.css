@@ -1,1 +1,18 @@
-/*# sourceMappingURL=about.css.map */
+main .about .profil-info .avatar {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+main .about .profil-info .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main .about .profil-info strong {
+  color: whitesmoke;
+  font-size: 2.1rem;
+  font-weight: bolder;
+}/*# sourceMappingURL=about.css.map */

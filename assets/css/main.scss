@@ -1,19 +1,28 @@
+*::selection {
+    color: #fff;
+}
+
 body {
     font-family: "Quicksand";
     background: #000;
     color: whitesmoke;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
-
 header {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 7rem;
     padding-inline: 3rem;
-    animation: slide-down .7s;
+    animation: slide-down 2s;
     
 
     @keyframes slide-down {
@@ -84,7 +93,7 @@ header {
 
         @keyframes slide-left {
             from {
-                transform: translateX(30vw);
+                transform: translateX(30rem);
             }
 
             to {
@@ -98,7 +107,7 @@ header {
             }
 
             to {
-                transform: translateX(40vw);
+                transform: translateX(30rem);
             }
         }
         .menu-close {
@@ -142,3 +151,70 @@ header {
 
     }
 }
+
+.container {
+    margin-top: 7rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    .main-content {
+        grid-column: 2/3;
+        padding: 2.4rem 1rem;
+        line-height: 1.7;
+        color: #808080;
+        font-weight: 400;
+        font-size: 1.6rem;
+        animation: slide-up 2s;
+        h1.title {
+            color: whitesmoke;
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 2.4rem;
+        }
+
+        p {
+            margin-bottom: 1.6rem;
+            .pink {
+                color: #e44985;
+            
+                &:hover {
+                    color: #d92067;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+
+    padding: 1rem;
+    p {
+        color: #808080;
+        font-size: 1.6rem;
+        text-align: center;
+        a {
+            color: #e44985;
+            &:hover, &:focus {
+                color: #d92067;
+
+            }
+            
+        }
+
+    }
+}
+
